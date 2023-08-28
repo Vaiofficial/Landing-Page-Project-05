@@ -8,3 +8,208 @@ html , body{
     height: 100%;
     width: 100%;
 }
+
+#main{
+    /* height: 100%; */
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    min-height: 60vh;
+}
+
+#top{
+    /* background-color: rgb(231, 11, 11); */
+    background-image: url(https://images.unsplash.com/photo-1554344728-77cf90d9ed26?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    min-height : 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+}
+
+#overlay{
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+}
+
+#text{
+    /* height: 120px; */
+    width: 100%;
+    display: flex;
+    /* background-color: rgb(9, 111, 151); */
+    position: absolute;
+    bottom: 20%;
+    padding: 0 10vw;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#text h1{
+    font-size: 5vw;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 900;
+}
+
+#rightside{
+    
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rightside p{
+    font-size: 12px;
+    width: 40%;
+}
+
+#rightside i{
+    color: white;
+}
+
+
+#bottom{
+    background-color: rgb(255, 118, 237);
+    min-height: 40vh;
+    width: 100%;
+    display: flex;
+}
+
+#bone{
+    width: 25%;
+    min-height: inherit;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+}
+
+#bone p{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+#btwo{
+    width: 25%;
+    min-height: inherit;
+    /* background-color: yellow; */
+    background-image: url(https://images.unsplash.com/photo-1584380931214-dbb5b72e7fd0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1949&q=80);
+    background-size: cover;
+    background-position: 100% 50%;
+}
+#bthree{
+    width: 20%;
+    min-height: inherit;
+    /* background-color: rgb(156, 19, 60); */
+    /* background-image: url(https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80); */
+    background-size: cover;
+    background-position: 100% 30%;
+
+}
+
+#bthreetop{
+    width: 100%;
+    min-height: 20vh;
+    padding: 20px;
+    background-color: rgb(236, 91, 7);
+    color: white;
+}
+
+#bthreetop p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#bthreebottom{
+    width: 100%;
+    min-height: 20vh;
+    /* background-color: rgb(212, 16, 65); */
+    background-image: url(https://images.unsplash.com/photo-1598971457999-ca4ef48a9a71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    background-position: 100% 19%;
+}
+
+#bfour{
+    width: 30%;
+    min-height: inherit;
+    background-color: rgb(45, 54, 48);
+    color: #fff;
+    padding: 30px;
+}
+
+.notf{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notf #photo{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+
+}
+
+.notf p{
+    width: 100%;
+    font-size: 12px;
+}
+
+
+@media(max-width:500px)
+{
+    #overlay #text{
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #overlay #text #rightside{
+        flex-direction: column ;
+        align-items: flex-start;
+    }
+
+    #overlay #text #rightside p{
+        width: initial;
+        margin-top: 20px;
+    }
+
+    #overlay #text #rightside #icon{
+
+        margin-top: 20px;
+    }
+
+    #text h1{
+        font-size: 10vw;
+    }
+
+    #bottom{
+        flex-direction: column;
+        min-height: 20vh;
+    }
+
+    #bone{
+        width: 100%;
+    }
+
+    #btwo{
+        width: 100%
+    }
+    #bthree{
+        width: 100%
+    }
+
+    #bfour{
+        width: 100%
+    }
+
+    #bthreebottom{
+        min-height: 30vh;
+    }
+    #bthreetop{
+        min-height: 10vh;
+    }
+
+}
